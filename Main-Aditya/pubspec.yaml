@@ -1,0 +1,108 @@
+name: cygiene_ui
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.1 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # ui packages
+  cupertino_icons: ^1.0.2
+  lottie: ^1.4.3
+  google_nav_bar: ^5.0.6
+  line_icons: ^2.0.1
+  line_awesome_flutter: ^2.0.0
+  fluttertoast: ^8.0.9
+  webview_flutter: ^4.8.0
+  get: ^4.6.5
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  csv: ^5.0.0
+
+  # state management
+  provider: ^6.0.3
+
+  # firebase 
+  cloud_firestore: ^4.8.0
+  firebase_auth: ^4.6.2
+  firebase_storage: ^11.0.4
+  google_sign_in: ^5.4.1
+
+  # vpn 
+  flutter_wireguard_vpn:
+    git:
+      url: https://github.com/omjadhav3714/flutter_wireguard_vpn_plugin
+      ref: main
+  android_alarm_manager_plus: ^3.0.2
+  
+  # utils
+  image_picker: ^0.8.5+3
+  image_cropper: ^3.0.1
+  path_provider: ^2.0.11
+  safe_device: ^1.1.1
+  screen_lock_check: ^2.0.1
+  geolocator: ^9.0.2
+  location_permissions: ^4.0.1
+  permission_handler: ^10.1.0
+  hackernews_api: ^0.0.6
+  url_launcher: ^6.3.0
+  flutter_native_splash: ^2.2.1
+  flutter_custom_clippers: ^2.1.0
+  device_apps: ^2.2.0
+  installed_apps: ^1.4.0
+  appcheck: ^1.0.6
+ 
+
+  http: any
+  firebase_core: any
+flutter_native_splash: 
+  color: "#ffffff"
+  image: assets/cyg_logo.png
+  color_dark: "#ffffff"
+  image_dark: assets/cyg_logo.png
+
+  android_12:
+    image: assets/cyg_logo.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/cyg_logo.png
+    icon_background_color_dark: "#ffffff"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+ 
+   
+    - assets/score_animation.json
+    - assets/white.json
+
+    - assets/google.png
+  
+    - assets/Cygiene_Logo.png
+    - assets/phone_scan.png
+    - assets/vpn_button.jpg
+
+    - assets/
+    - assets/vpn/
+    - assets/images/
+    - assets/lottie/
+    - assets/flags/
+
+  fonts:
+    - family: MilanoSans-Regular
+      fonts:    
+        - asset: fonts/MilanoSans-Regular.ttf
+
+    - family: Stardom-Regular
+      fonts:
+        - asset: fonts/Stardom-Regular.otf
