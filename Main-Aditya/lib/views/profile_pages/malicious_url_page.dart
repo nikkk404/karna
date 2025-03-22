@@ -20,7 +20,7 @@ class _MaliciousUrlPageState extends State<MaliciousUrlPage> {
   void _initializeWebView() {
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..loadRequest(Uri.parse('https://nikk404.pythonanywhere.com/'));
+      ..loadRequest(Uri.parse('MAL_URL'));
   }
 
   @override

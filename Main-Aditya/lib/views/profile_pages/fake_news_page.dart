@@ -20,7 +20,7 @@ class _FakeNewsPageState extends State<FakeNewsPage> {
   void _initializeWebView() {
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..loadRequest(Uri.parse('https://karna.pythonanywhere.com/'));
+      ..loadRequest(Uri.parse('WEB_URL'));
   }
 
   @override
