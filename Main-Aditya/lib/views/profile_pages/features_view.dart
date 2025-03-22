@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:cygiene_ui/views/profile_pages/cyber_helpline_page.dart';
-import 'package:cygiene_ui/views/profile_pages/fake_news_page.dart';
-import 'package:cygiene_ui/views/profile_pages/malicious_url_page.dart';
-import 'package:cygiene_ui/views/profile_pages/password_strength_page.dart';
-import 'package:cygiene_ui/views/profile_pages/incident_portal.dart';
-import 'package:cygiene_ui/views/widgets/chat_bot_page.dart';
+import 'package:Karna_ui/views/profile_pages/cyber_helpline_page.dart';
+import 'package:Karna_ui/views/profile_pages/fake_news_page.dart';
+import 'package:Karna_ui/views/profile_pages/malicious_url_page.dart';
+import 'package:Karna_ui/views/profile_pages/password_strength_page.dart';
+import 'package:Karna_ui/views/profile_pages/incident_portal.dart';
+import 'package:Karna_ui/views/widgets/chat_bot_page.dart';
 
 class FeaturesPage extends StatelessWidget {
   const FeaturesPage({super.key});

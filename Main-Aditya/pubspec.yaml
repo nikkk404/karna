@@ -1,4 +1,4 @@
-name: cygiene_ui
+name: Karna_ui
 description: A new Flutter project.
 
 version: 1.0.0+1
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
 
 
   # ui packages
@@ -85,16 +86,11 @@ flutter:
    
     - assets/score_animation.json
     - assets/white.json
-
     - assets/google.png
-  
-    - assets/Cygiene_Logo.png
-    - assets/phone_scan.png
     - assets/vpn_button.jpg
 
     - assets/
     - assets/vpn/
-    - assets/images/
     - assets/lottie/
     - assets/flags/
 

@@ -1,4 +1,4 @@
-import 'package:cygiene_ui/views/widgets/animated_counter_widget_view.dart';
+import 'package:Karna_ui/views/widgets/animated_counter_widget_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';

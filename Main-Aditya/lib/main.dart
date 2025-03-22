@@ -1,6 +1,6 @@
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
-import 'package:cygiene_ui/helpers/pref.dart';
-import 'package:cygiene_ui/views/bottom_navbar.dart';
+import 'package:Karna_ui/helpers/pref.dart';
+import 'package:Karna_ui/views/bottom_navbar.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

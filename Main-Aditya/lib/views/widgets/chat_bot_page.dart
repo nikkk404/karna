@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:cygiene_ui/views/services/mistral_service.dart';
+import 'package:Karna_ui/views/services/mistral_service.dart';
+import 'package:flutter/services.dart'; // For copying text
+import 'package:speech_to_text/speech_to_text.dart' as stt; // For voice input
 
 class ChatScreen extends StatefulWidget {
   @override
@@ -10,6 +12,14 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
   final List<Map<String, String>> messages = [];
+  late stt.SpeechToText _speech; // Speech-to-text instance
+  bool _isListening = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _speech = stt.SpeechToText();
+  }
 
   void sendMessage() async {
     String userMessage = _controller.text;
@@ -27,6 +37,23 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
+  void startListening() async {
+    bool available = await _speech.initialize();
+    if (available) {
+      setState(() => _isListening = true);
+      _speech.listen(onResult: (result) {
+        setState(() {
+          _controller.text = result.recognizedWords;
+        });
+      });
+    }
+  }
+
+  void stopListening() {
+    setState(() => _isListening = false);
+    _speech.stop();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,19 +66,28 @@ class _ChatScreenState extends State<ChatScreen> {
               itemBuilder: (context, index) {
                 final message = messages[index];
                 bool isUser = message["role"] == "user";
-                return Align(
-                  alignment:
-                      isUser ? Alignment.centerRight : Alignment.centerLeft,
-                  child: Container(
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                    decoration: BoxDecoration(
-                      color: isUser ? Colors.blue : Colors.grey[300],
-                      borderRadius: BorderRadius.circular(10),
+                return GestureDetector(
+                  onLongPress: () {
+                    Clipboard.setData(
+                        ClipboardData(text: message["content"] ?? ""));
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text("Message copied to clipboard")),
+                    );
+                  },
+                  child: Align(
+                    alignment:
+                        isUser ? Alignment.centerRight : Alignment.centerLeft,
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                      decoration: BoxDecoration(
+                        color: isUser ? Colors.blue : Colors.grey[300],
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(message["content"] ?? "",
+                          style: TextStyle(
+                              color: isUser ? Colors.white : Colors.black)),
                     ),
-                    child: Text(message["content"] ?? "",
-                        style: TextStyle(
-                            color: isUser ? Colors.white : Colors.black)),
                   ),
                 );
               },
@@ -61,6 +97,10 @@ class _ChatScreenState extends State<ChatScreen> {
             padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
+                IconButton(
+                  icon: Icon(_isListening ? Icons.mic : Icons.mic_none),
+                  onPressed: _isListening ? stopListening : startListening,
+                ),
                 Expanded(
                   child: TextField(
                     controller: _controller,

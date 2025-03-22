@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:cygiene_ui/constants/colors.dart';
-import 'package:cygiene_ui/models/authentication/FirebaseAuthServiceModel.dart';
+import 'package:Karna_ui/constants/colors.dart';
+import 'package:Karna_ui/models/authentication/FirebaseAuthServiceModel.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import '../models/User.dart';

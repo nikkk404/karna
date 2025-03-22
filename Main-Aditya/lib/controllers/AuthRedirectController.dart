@@ -1,6 +1,6 @@
 // ignore_for_file: file_names
 import 'dart:ui';
-import 'package:cygiene_ui/views/bottom_navbar.dart';
+import 'package:Karna_ui/views/bottom_navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/User.dart';

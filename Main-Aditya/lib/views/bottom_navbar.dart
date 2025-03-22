@@ -1,9 +1,9 @@
-import 'package:cygiene_ui/cyber_tips_view.dart';
-import 'package:cygiene_ui/home_view.dart';
-import 'package:cygiene_ui/views/profile_pages/features_view.dart';
-import 'package:cygiene_ui/views/profile_pages/blogs_view.dart';
-import 'package:cygiene_ui/views/profile_pages/faqs_view.dart';
-import 'package:cygiene_ui/views/profile_pages/profile_view.dart';
+import 'package:Karna_ui/cyber_tips_view.dart';
+import 'package:Karna_ui/home_view.dart';
+import 'package:Karna_ui/views/profile_pages/features_view.dart';
+import 'package:Karna_ui/views/profile_pages/blogs_view.dart';
+import 'package:Karna_ui/views/profile_pages/faqs_view.dart';
+import 'package:Karna_ui/views/profile_pages/profile_view.dart';
 
 import 'package:flutter/material.dart';
 

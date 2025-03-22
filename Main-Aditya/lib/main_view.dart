@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cygiene_ui/views/installed_apps.dart';
-import 'package:cygiene_ui/views/profile_pages/faqs_view.dart';
+import 'package:Karna_ui/views/installed_apps.dart';
+import 'package:Karna_ui/views/profile_pages/faqs_view.dart';
 import 'package:flutter/material.dart';
 import 'home_view.dart';
 import 'models/User.dart';

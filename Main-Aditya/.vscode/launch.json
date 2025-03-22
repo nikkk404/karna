@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "cygiene_ui",
+            "name": "Karna_ui",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "cygiene_ui (profile mode)",
+            "name": "Karna_ui (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "cygiene_ui (release mode)",
+            "name": "Karna_ui (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

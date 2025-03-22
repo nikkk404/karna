@@ -1,7 +1,7 @@
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cygiene_ui/constants/colors.dart';
-import 'package:cygiene_ui/views/profile_pages/faqs_view.dart';
+import 'package:Karna_ui/constants/colors.dart';
+import 'package:Karna_ui/views/profile_pages/faqs_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../models/User.dart';

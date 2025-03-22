@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:cygiene_ui/constants/colors.dart';
-import 'package:cygiene_ui/constants/strings.dart';
+import 'package:Karna_ui/constants/colors.dart';
+import 'package:Karna_ui/constants/strings.dart';
 import '../../controllers/AuthController.dart';
 import '../../utils/show_error_view.dart';
 import '../widgets/authbutton_widget_view.dart';

@@ -1,7 +1,7 @@
-import 'package:cygiene_ui/navigation/parameters_logic.dart';
+import 'package:Karna_ui/navigation/parameters_logic.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:cygiene_ui/screens/location_screen.dart';
+import 'package:Karna_ui/screens/location_screen.dart';
 import 'package:get/get.dart';
 import '../controllers/home_controller.dart';
 import '../services/vpn_engine.dart';
@@ -9,7 +9,7 @@ import 'views/widgets/count_down_timer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'views/profile_pages/profile_view.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:cygiene_ui/views/widgets/custom_clipper.dart';
+import 'package:Karna_ui/views/widgets/custom_clipper.dart';
 import '../views/widgets/chat_bot_page.dart';
 import 'views/profile_pages/AboutUsView.dart';
 

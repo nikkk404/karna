@@ -1,4 +1,4 @@
-import 'package:cygiene_ui/constants/colors.dart';
+import 'package:Karna_ui/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:hackernews_api/hackernews_api.dart';
 
@@ -76,10 +76,6 @@ class _BlogsViewState extends State<BlogsView> {
           ],
         ),
       ),
-
     );
-
   }
-
-
 }
