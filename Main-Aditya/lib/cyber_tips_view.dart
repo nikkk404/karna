@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'views/widgets/chat_bot_page.dart';
 
 class NewsApiService {
-  static const _apiKey = 'YOUR_API_KEY';
+  static const _apiKey = '954559b9924c4d108f6215097a699a4d';
   static const _baseUrl = 'https://newsapi.org/v2';
 
   Future<List<dynamic>> fetchCyberNews() async {
